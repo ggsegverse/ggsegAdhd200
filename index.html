@@ -59,8 +59,53 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9">
-ADHD 200 spatially constrained spectral clustering parcellations for the 'ggseg' ecosystem. Provides 'ggseg_atlas' objects at 200 and 400 parcel resolutions derived from 650 subjects in the ADHD 200 consortium.
+  <main id="main" class="col-md-9"><div class="section level1">
+<div class="page-header"><h1 id="ggsegadhd200">ggsegAdhd200<a class="anchor" aria-label="anchor" href="#ggsegadhd200"></a>
+</h1></div>
+<!-- badges: start -->
+
+<p>ADHD-200 Parcellation Atlases for the ggsegverse Ecosystem.</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># From r-universe</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"ggsegAdhd200"</span>, repos <span class="op">=</span> <span class="st">"https://ggsegverse.r-universe.dev"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># From GitHub</span></span>
+<span><span class="co"># install.packages("remotes")</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"ggsegverse/ggsegAdhd200"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="atlases">Atlases<a class="anchor" aria-label="anchor" href="#atlases"></a>
+</h2>
+<div class="section level3">
+<h3 id="adhd200_200">adhd200_200<a class="anchor" aria-label="anchor" href="#adhd200_200"></a>
+</h3>
+<p>Craddock CC200 parcellation (190 regions).</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ggsegverse/ggsegAdhd200" class="external-link">ggsegAdhd200</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu">adhd200_200</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/README-adhd200_200-1.png" alt="" width="100%"></p>
+</div>
+<div class="section level3">
+<h3 id="adhd200_400">adhd200_400<a class="anchor" aria-label="anchor" href="#adhd200_400"></a>
+</h3>
+<p>Craddock CC400 parcellation (351 regions).</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu">adhd200_400</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/README-adhd200_400-1.png" alt="" width="100%"> ## Data source</p>
+<p><a href="https://www.nitrc.org/frs/?group_id=427" class="external-link">NITRC</a>.</p>
+<ul>
+<li>
+<strong>Reference</strong>: Craddock et al. (2012) <a href="https://doi.org/10.1002/hbm.21333" class="external-link">doi:10.1002/hbm.21333</a>
+</li>
+<li>
+<strong>Date obtained</strong>: 2026-03-28</li>
+</ul>
+</div>
+</div>
+</div>
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
@@ -93,7 +138,13 @@ ADHD 200 spatially constrained spectral clustering parcellations for the 'ggseg'
 </ul>
 </div>
 
-
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/ggsegverse/ggsegAdhd200/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/ggsegverse/ggsegAdhd200/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://ggsegverse.r-universe.dev/ggsegAdhd200" class="external-link"><img src="https://ggsegverse.r-universe.dev/badges/ggsegAdhd200" alt="r-universe"></a></li>
+</ul>
+</div>
 
   </aside>
 </div>
