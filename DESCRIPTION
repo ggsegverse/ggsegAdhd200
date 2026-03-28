@@ -1,0 +1,32 @@
+Package: ggsegAdhd200
+Title: ADHD 200 Parcellation Atlas for the 'ggseg' Ecosystem
+Version: 1.0.0
+Authors@R: c(person("Athanasia Mo", "Mowinckel",
+                    email = "a.m.mowinckel@psykologi.uio.no",
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0002-5756-0223")),
+            person("Didac", "Vidal-Pineiro",
+                    email = "d.v.pineiro@psykologi.uio.no",
+                    role = c("aut"),
+                    comment = c(ORCID = "0000-0001-9997-9156")))
+Description: ADHD 200 spatially constrained spectral clustering parcellations
+    for the 'ggseg' ecosystem. Provides 'ggseg_atlas' objects at 200 and 400
+    parcel resolutions derived from 650 subjects in the ADHD 200 consortium.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends:
+    R (>= 4.1)
+Imports:
+    ggseg.formats
+Suggests:
+    ggseg,
+    ggseg3d,
+    ggplot2,
+    testthat (>= 3.0.0),
+    vdiffr
+URL: https://github.com/ggsegverse/ggsegAdhd200
+BugReports: https://github.com/ggsegverse/ggsegAdhd200/issues
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+Config/Needs/website: ggsegverse/ggseg.docs
