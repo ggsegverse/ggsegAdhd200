@@ -17,6 +17,7 @@
 #' @examples
 #' adhd200_200()
 # fmt: skip
+#' plot(adhd200_200())
 adhd200_200 <- function() .adhd200_200
 
 #' ADHD 200 400-Parcel Atlas
@@ -37,4 +38,5 @@ adhd200_200 <- function() .adhd200_200
 #' @examples
 #' adhd200_400()
 # fmt: skip
+#' plot(adhd200_400())
 adhd200_400 <- function() .adhd200_400
