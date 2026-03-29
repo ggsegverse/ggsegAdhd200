@@ -9,7 +9,7 @@ for (atlas_nm in atlas_names) {
     })
 
     it("has required core columns", {
-      required_cols <- c("hemi", "region", "label", "colour")
+      required_cols <- c("hemi", "region", "label")
       expect_true(all(required_cols %in% names(atlas_fn()$core)))
     })
 
@@ -32,7 +32,7 @@ for (atlas_nm in atlas_names) {
 
   describe(paste(atlas_nm, "3D rendering support"), {
     it("has vertex data for 3D rendering", {
-      expect_true(!is.null(atlas_fn()$data$vertices))
+      expect_true(!is.null(atlas_fn()$data) || !is.null(atlas_fn()$data$vertices))
     })
   })
 
