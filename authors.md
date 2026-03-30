@@ -14,13 +14,13 @@ Source:
 [`DESCRIPTION`](https://github.com/ggsegverse/ggsegAdhd200/blob/main/DESCRIPTION)
 
 Mowinckel A, Vidal-Pineiro D (2026). *ggsegAdhd200: ADHD 200
-Parcellation Atlas for the 'ggseg' Ecosystem*. R package version 1.0.0,
+Parcellation Atlas for the 'ggseg' Ecosystem*. R package version 1.0.1,
 <https://github.com/ggsegverse/ggsegAdhd200>.
 
     @Manual{,
       title = {ggsegAdhd200: ADHD 200 Parcellation Atlas for the 'ggseg' Ecosystem},
       author = {Athanasia Mo Mowinckel and Didac Vidal-Pineiro},
       year = {2026},
-      note = {R package version 1.0.0},
+      note = {R package version 1.0.1},
       url = {https://github.com/ggsegverse/ggsegAdhd200},
     }
