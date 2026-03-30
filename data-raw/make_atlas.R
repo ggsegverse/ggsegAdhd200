@@ -11,7 +11,7 @@ library(ggseg.formats)
 
 Sys.setenv(FREESURFER_HOME = "/Applications/freesurfer/7.4.1")
 
-objs <- list()
+sysdata_env <- new.env(parent = emptyenv())
 
 for (res in c(200, 400)) {
   atlases <- create_wholebrain_from_volume(
@@ -23,13 +23,20 @@ for (res in c(200, 400)) {
   )
 
   if (!is.null(atlases$cortical)) {
-    objs[[paste0(".adhd200_", res, "_cortical")]] <- atlases$cortical
+    sysdata_env[[paste0(".adhd200_", res, "_cortical")]] <- atlases$cortical
     print(atlases$cortical)
     plot(atlases$cortical)
   }
   if (!is.null(atlases$subcortical)) {
-    objs[[paste0(".adhd200_", res, "_subcortical")]] <- atlases$subcortical
+    sysdata_env[[paste0(".adhd200_", res, "_subcortical")]] <- atlases$subcortical
+    print(atlases$subcortical)
+    plot(atlases$subcortical)
   }
 }
 
-do.call(usethis::use_data, c(objs, list(overwrite = TRUE, compress = "xz", internal = TRUE)))
+save(
+  list = ls(sysdata_env, all.names = TRUE),
+  envir = sysdata_env,
+  file = here::here("R", "sysdata.rda"),
+  compress = "xz"
+)
